@@ -6,23 +6,23 @@ t = random.choice(choices)
  
 def decider(user, t): 
     if user == 'rock' and t == "paper":
-        return "You Lost."
+        return "Oops You Lost."
     else:
-        return "You Won!" 
+        return "Bravo You Won!" 
     if user == 'paper' and t == "scissors":
-        return "You Lost."
+        return "Oops You Lost."
     else:
-        return "You Won!" 
+        return "Bravo You Won!" 
     if user == 'scissors' and t == "rock":
-        return "You Lost."
+        return "Oops You Lost."
     else:
-        return "You Won!"
+        return "Bravo You Won!"
     
 while user != "end":
     user = input("Make a choice")
     t = random.choice(choices) 
     if user == "end":
-        print("Game done.") 
+        print("Game Over.") 
     elif user not in choices:
         print("Input Error: Input not valid choice. Choose again.")
     elif user == t:
